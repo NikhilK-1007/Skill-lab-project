@@ -15,26 +15,6 @@ C. AI root-cause analysis-This is the feature that makes the project stand out. 
 D. AI recommendations-After identifying the problem, the system recommends possible actions.
 E. Incident management-Every important problem becomes an incident.
 
-Steps-
-Step 1
 
-Figma
 
-Design the complete product.
-
-↓
-
-Step 2
-
-HTML/CSS/React
-
-Build the dashboard.
-
-↓
-
-Step 3
-
-Mock API
-
-Make your frontend work with fake infrastructure data.
 
