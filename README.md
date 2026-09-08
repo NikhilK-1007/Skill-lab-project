@@ -20,6 +20,10 @@ Figma Design of website
 
 <img width="1907" height="911" alt="image" src="https://github.com/user-attachments/assets/be1e4c8d-99b4-4bd1-941d-72c04f042a5f" />
 
+Prototype
+
+https://www.figma.com/proto/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?node-id=22-7&p=f&t=5ZcEYVRdFyNSbYvo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=22%3A7
+
 
 
 
