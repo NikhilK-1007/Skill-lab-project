@@ -11,19 +11,17 @@ It provides a centralized dashboard that monitors cloud resources, detects anoma
 Features required:-
 A. Real-time infrastructure monitoring- The dashboard gives engineers a single view of their infrastructure.
 B. Intelligent anomaly detection-Instead of simply showing graphs, the system identifies unusual behavior.
-C. AI root-cause analysis-This is the feature that makes the project stand out. AI analyzes the relationships between these events.
-D. AI recommendations-After identifying the problem, the system recommends possible actions.
-E. Incident management-Every important problem becomes an incident.
 
 Figma Design of website
 
-
-<img width="1907" height="911" alt="image" src="https://github.com/user-attachments/assets/be1e4c8d-99b4-4bd1-941d-72c04f042a5f" />
+<img width="1193" height="828" alt="image" src="https://github.com/user-attachments/assets/69d02177-fd29-4c31-a8c8-80a85b0474fa" />
 
 Prototype
 
-https://www.figma.com/proto/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?node-id=22-7&p=f&t=5ZcEYVRdFyNSbYvo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=22%3A7
+https://www.figma.com/design/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?node-id=0-1&t=NTXK2n2Ce0l6OYoP-1
 
+AI vers- https://stitch.withgoogle.com/projects/14061967927264143048
+<img width="950" height="750" alt="image" src="https://github.com/user-attachments/assets/046a188d-36e9-477f-99d9-5d74aaf0ca92" />
 
 
 
