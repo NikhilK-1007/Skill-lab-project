@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudOps AI - Infrastructure Monitoring</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo-container">
+            <div class="cloud-logo">☁</div>
+
+            <div>
+                <h2>CloudOps <span>AI</span></h2>
+                <p>Intelligent Cloud Monitoring</p>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="#dashboard" class="nav-item active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#resources" class="nav-item">
+                <span>▣</span>
+                Resources
+            </a>
+
+            <a href="#monitoring" class="nav-item">
+                <span>⌁</span>
+                Monitoring
+            </a>
+
+            <a href="#anomalies" class="nav-item">
+                <span>⚠</span>
+                Anomalies
+                <span class="notification">5</span>
+            </a>
+
+            <a href="#rootcause" class="nav-item">
+                <span>✦</span>
+                AI Root Cause
+            </a>
+
+            <a href="#recommendations" class="nav-item">
+                <span>✓</span>
+                Recommendations
+            </a>
+
+            <a href="#incidents" class="nav-item">
+                <span>!</span>
+                Incidents
+                <span class="notification red">3</span>
+            </a>
+
+            <a href="#logs" class="nav-item">
+                <span>≡</span>
+                Logs
+            </a>
+
+            <a href="#settings" class="nav-item">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Healthy</strong>
+                    <small>All services operational</small>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar">AK</div>
+
+                <div>
+                    <strong>Admin User</strong>
+                    <small>Cloud Engineer</small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="text" placeholder="Search resources, incidents...">
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="live-status">
+                    <span></span>
+                    LIVE
+                </div>
+
+                <div class="notification-icon">
+                    🔔
+                </div>
+
+                <div class="profile-mini">
+                    <div class="avatar small">AK</div>
+                    <span>Admin</span>
+                    <span>⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="page-section">
+
+            <div class="page-heading">
+
+                <div>
+                    <p class="breadcrumb">CloudOps AI / Dashboard</p>
+                    <h1>Infrastructure Overview</h1>
+                    <p class="subtitle">
+                        Monitor your entire cloud infrastructure from one place.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Add Resource
+                </button>
+
+            </div>
+
+
+            <!-- ================= SUMMARY CARDS ================= -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Total Resources</span>
+                        <div class="icon blue">▣</div>
+                    </div>
+
+                    <h2>24</h2>
+
+                    <div class="stat-bottom">
+                        <span class="positive">↑ 12%</span>
+                        <span>vs last week</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Healthy Resources</span>
+                        <div class="icon green">✓</div>
+                    </div>
+
+                    <h2>19</h2>
+
+                    <div class="stat-bottom">
+                        <span class="positive">79%</span>
+                        <span>of total</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Active Anomalies</span>
+                        <div class="icon orange">⚠</div>
+                    </div>
+
+                    <h2>5</h2>
+
+                    <div class="stat-bottom">
+                        <span class="warning">3 High</span>
+                        <span>2 Medium</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Open Incidents</span>
+                        <div class="icon red">!</div>
+                    </div>
+
+                    <h2>3</h2>
+
+                    <div class="stat-bottom">
+                        <span class="danger">2 Critical</span>
+                        <span>1 High</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MONITORING SECTION ================= -->
+
+            <div class="section-title" id="monitoring">
+
+                <div>
+                    <h2>A. Real-time Infrastructure Monitoring</h2>
+
+                    <p>
+                        A single real-time view of your cloud infrastructure,
+                        services and resources.
+                    </p>
+                </div>
+
+                <span class="live-badge">
+                    ● Live Monitoring
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <!-- CPU CHART -->
+
+                <div class="panel chart-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>CPU Utilization</h3>
+                            <p>Average usage across infrastructure</p>
+                        </div>
+
+                        <select>
+                            <option>Last 1 hour</option>
+                            <option>Last 6 hours</option>
+                            <option>Last 24 hours</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="y-labels">
+                            <span>100%</span>
+                            <span>75%</span>
+                            <span>50%</span>
+                            <span>25%</span>
+                            <span>0%</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-line line1"></div>
+                            <div class="grid-line line2"></div>
+                            <div class="grid-line line3"></div>
+                            <div class="grid-line line4"></div>
+
+                            <svg
+                                viewBox="0 0 600 220"
+                                preserveAspectRatio="none"
+                                class="chart-svg">
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="cpuGradient"
+                                        x1="0"
+                                        x2="0"
+                                        y1="0"
+                                        y2="1">
+
+                                        <stop
+                                            offset="0%"
+                                            stop-color="#168cff"
+                                            stop-opacity=".35" />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-color="#168cff"
+                                            stop-opacity="0" />
+
+                                    </linearGradient>
+
+                                </defs>
+
+                                <path
+                                    class="area"
+                                    d="M0,150
+                                       C35,130 55,145 80,115
+                                       C110,90 130,135 160,120
+                                       C190,105 210,75 240,100
+                                       C270,125 290,135 320,110
+                                       C350,85 370,120 400,95
+                                       C430,65 450,75 480,90
+                                       C510,105 540,50 570,65
+                                       C590,75 600,50 600,50
+                                       L600,220
+                                       L0,220 Z" />
+
+                                <path
+                                    class="line"
+                                    d="M0,150
+                                       C35,130 55,145 80,115
+                                       C110,90 130,135 160,120
+                                       C190,105 210,75 240,100
+                                       C270,125 290,135 320,110
+                                       C350,85 370,120 400,95
+                                       C430,65 450,75 480,90
+                                       C510,105 540,50 570,65
+                                       C590,75 600,50 600,50" />
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-times">
+                        <span>10:00</span>
+                        <span>10:15</span>
+                        <span>10:30</span>
+                        <span>10:45</span>
+                        <span>11:00</span>
+                    </div>
+
+                </div>
+
+
+                <!-- RESOURCE DISTRIBUTION -->
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Resource Distribution</h3>
+                            <p>Resources by type</p>
+                        </div>
+
+                        <button class="more-button">•••</button>
+
+                    </div>
+
+
+                    <div class="resource-chart">
+
+                        <div class="donut">
+
+                            <div class="donut-center">
+                                <strong>24</strong>
+                                <span>Total</span>
+                            </div>
+
+                        </div>
+
+                        <div class="resource-list">
+
+                            <div>
+                                <span class="legend blue-bg"></span>
+                                <span>EC2 / Compute</span>
+                                <strong>8</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend purple-bg"></span>
+                                <span>Database</span>
+                                <strong>5</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend cyan-bg"></span>
+                                <span>Storage</span>
+                                <strong>6</strong>
+                            </div>
+
+                            <div>
+                                <span class="legend orange-bg"></span>
+                                <span>Network</span>
+                                <strong>5</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RESOURCE HEALTH ================= -->
+
+            <div class="panel resources-panel" id="resources">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Resource Health</h3>
+                        <p>Real-time status of your infrastructure</p>
+                    </div>
+
+                    <button class="secondary-button">
+                        View All Resources →
+                    </button>
+
+                </div>
+
+
+                <div class="resource-table">
+
+                    <div class="table-header">
+                        <span>RESOURCE</span>
+                        <span>TYPE</span>
+                        <span>CPU</span>
+                        <span>MEMORY</span>
+                        <span>STATUS</span>
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span class="resource-name">
+                            <span class="resource-icon">▣</span>
+                            web-server-01
+                        </span>
+
+                        <span>EC2 Instance</span>
+
+                        <span>42%</span>
+
+                        <span>61%</span>
+
+                        <span class="status healthy">
+                            ● Healthy
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span class="resource-name">
+                            <span class="resource-icon">▣</span>
+                            web-server-02
+                        </span>
+
+                        <span>EC2 Instance</span>
+
+                        <span>78%</span>
+
+                        <span>73%</span>
+
+                        <span class="status warning-status">
+                            ● Warning
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span class="resource-name">
+                            <span class="resource-icon">▤</span>
+                            production-db
+                        </span>
+
+                        <span>Database</span>
+
+                        <span>34%</span>
+
+                        <span>52%</span>
+
+                        <span class="status healthy">
+                            ● Healthy
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span class="resource-name">
+                            <span class="resource-icon">◈</span>
+                            api-gateway
+                        </span>
+
+                        <span>Network</span>
+
+                        <span>66%</span>
+
+                        <span>48%</span>
+
+                        <span class="status healthy">
+                            ● Healthy
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ANOMALIES ================= -->
+
+            <div class="section-title" id="anomalies">
+
+                <div>
+                    <h2>B. Intelligent Anomaly Detection</h2>
+
+                    <p>
+                        AI identifies unusual infrastructure behavior instead
+                        of simply displaying graphs.
+                    </p>
+                </div>
+
+                <span class="ai-badge">✦ AI Powered</span>
+
+            </div>
+
+
+            <div class="anomaly-grid">
+
+                <div class="anomaly-card critical">
+
+                    <div class="anomaly-header">
+                        <span class="severity critical-bg">CRITICAL</span>
+                        <span>2 min ago</span>
+                    </div>
+
+                    <h3>High CPU Utilization</h3>
+
+                    <p>
+                        web-server-02 CPU usage increased significantly
+                        above its normal baseline.
+                    </p>
+
+                    <div class="anomaly-metrics">
+
+                        <div>
+                            <span>Current</span>
+                            <strong>94%</strong>
+                        </div>
+
+                        <div>
+                            <span>Baseline</span>
+                            <strong>52%</strong>
+                        </div>
+
+                        <div>
+                            <span>Confidence</span>
+                            <strong>97%</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="outline-button">
+                        Investigate Anomaly →
+                    </button>
+
+                </div>
+
+
+                <div class="anomaly-card high">
+
+                    <div class="anomaly-header">
+                        <span class="severity high-bg">HIGH</span>
+                        <span>8 min ago</span>
+                    </div>
+
+                    <h3>Database Latency Spike</h3>
+
+                    <p>
+                        production-db response latency is significantly
+                        higher than the expected baseline.
+                    </p>
+
+                    <div class="anomaly-metrics">
+
+                        <div>
+                            <span>Current</span>
+                            <strong>420ms</strong>
+                        </div>
+
+                        <div>
+                            <span>Baseline</span>
+                            <strong>120ms</strong>
+                        </div>
+
+                        <div>
+                            <span>Confidence</span>
+                            <strong>91%</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="outline-button">
+                        Investigate Anomaly →
+                    </button>
+
+                </div>
+
+
+                <div class="anomaly-card medium">
+
+                    <div class="anomaly-header">
+                        <span class="severity medium-bg">MEDIUM</span>
+                        <span>15 min ago</span>
+                    </div>
+
+                    <h3>Network Traffic Increase</h3>
+
+                    <p>
+                        Unusual outbound network traffic detected on
+                        api-gateway.
+                    </p>
+
+                    <div class="anomaly-metrics">
+
+                        <div>
+                            <span>Current</span>
+                            <strong>2.8 GB/s</strong>
+                        </div>
+
+                        <div>
+                            <span>Baseline</span>
+                            <strong>1.4 GB/s</strong>
+                        </div>
+
+                        <div>
+                            <span>Confidence</span>
+                            <strong>86%</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="outline-button">
+                        Investigate Anomaly →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ROOT CAUSE ================= -->
+
+            <div class="section-title" id="rootcause">
+
+                <div>
+                    <h2>C. AI Root-Cause Analysis</h2>
+
+                    <p>
+                        AI analyzes relationships between infrastructure
+                        events to identify the most likely root cause.
+                    </p>
+                </div>
+
+                <span class="ai-badge">✦ AI Analysis</span>
+
+            </div>
+
+
+            <div class="rootcause-panel">
+
+                <div class="rootcause-header">
+
+                    <div>
+
+                        <span class="severity critical-bg">
+                            CRITICAL INCIDENT
+                        </span>
+
+                        <h3>INC-1042 — API Performance Degradation</h3>
+
+                        <p>
+                            Started 12 minutes ago · Affected service:
+                            API Gateway
+                        </p>
+
+                    </div>
+
+                    <div class="confidence">
+
+                        <span>AI Confidence</span>
+
+                        <strong>94%</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-flow">
+
+                    <div class="flow-card">
+
+                        <div class="flow-icon orange">↑</div>
+
+                        <span>Event 01</span>
+
+                        <h4>Traffic Increase</h4>
+
+                        <p>
+                            API traffic increased by 182%.
+                        </p>
+
+                    </div>
+
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="flow-card">
+
+                        <div class="flow-icon red">!</div>
+
+                        <span>Event 02</span>
+
+                        <h4>CPU Saturation</h4>
+
+                        <p>
+                            Web server CPU reached 94%.
+                        </p>
+
+                    </div>
+
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="flow-card">
+
+                        <div class="flow-icon purple">◈</div>
+
+                        <span>Event 03</span>
+
+                        <h4>Database Latency</h4>
+
+                        <p>
+                            Database latency reached 420ms.
+                        </p>
+
+                    </div>
+
+
+                    <div class="flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="root-cause-card">
+
+                        <div class="ai-symbol">✦</div>
+
+                        <span>ROOT CAUSE</span>
+
+                        <h4>Insufficient Compute Capacity</h4>
+
+                        <p>
+                            Increased API traffic overloaded the current
+                            compute capacity, resulting in CPU saturation
+                            and cascading database latency.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ai-summary">
+
+                    <div class="ai-summary-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <strong>AI Analysis Summary</strong>
+
+                        <p>
+                            The most probable root cause is a sudden increase
+                            in API traffic combined with insufficient compute
+                            capacity. The event sequence indicates that
+                            traffic increased first, followed by CPU
+                            saturation and database latency.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RECOMMENDATIONS ================= -->
+
+            <div class="section-title" id="recommendations">
+
+                <div>
+
+                    <h2>D. AI Recommendations</h2>
+
+                    <p>
+                        AI recommends corrective actions based on the
+                        detected problem and its root cause.
+                    </p>
+
+                </div>
+
+                <span class="ai-badge">✦ AI Suggested</span>
+
+            </div>
+
+
+            <div class="recommendations-grid">
+
+                <div class="recommendation-card recommended">
+
+                    <div class="recommendation-top">
+
+                        <div class="recommendation-icon">
+                            ⚡
+                        </div>
+
+                        <span class="recommended-label">
+                            RECOMMENDED
+                        </span>
+
+                    </div>
+
+                    <h3>Scale Web Servers</h3>
+
+                    <p>
+                        Increase the number of web server instances from
+                        2 to 4 to handle the increased traffic.
+                    </p>
+
+                    <div class="recommendation-details">
+
+                        <div>
+                            <span>Expected Impact</span>
+                            <strong>High</strong>
+                        </div>
+
+                        <div>
+                            <span>Recovery Time</span>
+                            <strong>~3 min</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="primary-button full">
+                        Apply Recommendation
+                    </button>
+
+                </div>
+
+
+                <div class="recommendation-card">
+
+                    <div class="recommendation-top">
+
+                        <div class="recommendation-icon">
+                            ◈
+                        </div>
+
+                        <span class="safe-label">
+                            SAFE
+                        </span>
+
+                    </div>
+
+                    <h3>Enable Auto Scaling</h3>
+
+                    <p>
+                        Configure automatic scaling based on CPU and
+                        request-count thresholds.
+                    </p>
+
+                    <div class="recommendation-details">
+
+                        <div>
+                            <span>Expected Impact</span>
+                            <strong>High</strong>
+                        </div>
+
+                        <div>
+                            <span>Recovery Time</span>
+                            <strong>~5 min</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="secondary-button full">
+                        Review Action
+                    </button>
+
+                </div>
+
+
+                <div class="recommendation-card">
+
+                    <div class="recommendation-top">
+
+                        <div class="recommendation-icon">
+                            ◉
+                        </div>
+
+                        <span class="optimization-label">
+                            OPTIMIZATION
+                        </span>
+
+                    </div>
+
+                    <h3>Optimize Database Queries</h3>
+
+                    <p>
+                        Identify and optimize slow database queries
+                        contributing to latency.
+                    </p>
+
+                    <div class="recommendation-details">
+
+                        <div>
+                            <span>Expected Impact</span>
+                            <strong>Medium</strong>
+                        </div>
+
+                        <div>
+                            <span>Recovery Time</span>
+                            <strong>~15 min</strong>
+                        </div>
+
+                    </div>
+
+                    <button class="secondary-button full">
+                        Review Action
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= INCIDENT MANAGEMENT ================= -->
+
+            <div class="section-title" id="incidents">
+
+                <div>
+
+                    <h2>E. Incident Management</h2>
+
+                    <p>
+                        Important infrastructure problems are automatically
+                        converted into trackable incidents.
+                    </p>
+
+                </div>
+
+                <button class="primary-button">
+                    + Create Incident
+                </button>
+
+            </div>
+
+
+            <div class="panel incident-panel">
+
+                <div class="incident-toolbar">
+
+                    <div class="incident-tabs">
+
+                        <button class="active-tab">
+                            All <span>8</span>
+                        </button>
+
+                        <button>
+                            Critical <span>2</span>
+                        </button>
+
+                        <button>
+                            High <span>3</span>
+                        </button>
+
+                        <button>
+                            Resolved <span>3</span>
+                        </button>
+
+                    </div>
+
+                    <button class="secondary-button">
+                        Filter ▾
+                    </button>
+
+                </div>
+
+
+                <div class="incident-table">
+
+                    <div class="incident-header">
+
+                        <span>INCIDENT</span>
+                        <span>SEVERITY</span>
+                        <span>SERVICE</span>
+                        <span>STATUS</span>
+                        <span>OWNER</span>
+                        <span>TIME</span>
+
+                    </div>
+
+
+                    <div class="incident-row">
+
+                        <strong>INC-1042</strong>
+
+                        <span class="severity critical-bg">
+                            CRITICAL
+                        </span>
+
+                        <span>API Gateway</span>
+
+                        <span class="incident-status investigating">
+                            Investigating
+                        </span>
+
+                        <span>Alex K.</span>
+
+                        <span>12 min</span>
+
+                    </div>
+
+
+                    <div class="incident-row">
+
+                        <strong>INC-1041</strong>
+
+                        <span class="severity high-bg">
+                            HIGH
+                        </span>
+
+                        <span>Production DB</span>
+
+                        <span class="incident-status investigating">
+                            Investigating
+                        </span>
+
+                        <span>Sarah M.</span>
+
+                        <span>28 min</span>
+
+                    </div>
+
+
+                    <div class="incident-row">
+
+                        <strong>INC-1040</strong>
+
+                        <span class="severity high-bg">
+                            HIGH
+                        </span>
+
+                        <span>Web Server</span>
+
+                        <span class="incident-status monitoring">
+                            Monitoring
+                        </span>
+
+                        <span>John D.</span>
+
+                        <span>42 min</span>
+
+                    </div>
+
+
+                    <div class="incident-row">
+
+                        <strong>INC-1039</strong>
+
+                        <span class="severity medium-bg">
+                            MEDIUM
+                        </span>
+
+                        <span>Network</span>
+
+                        <span class="incident-status resolved">
+                            Resolved
+                        </span>
+
+                        <span>Alex K.</span>
+
+                        <span>1 hr</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LOGS ================= -->
+
+            <div class="section-title" id="logs">
+
+                <div>
+
+                    <h2>Infrastructure Logs</h2>
+
+                    <p>
+                        Recent system events and infrastructure activity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel logs-panel">
+
+                <div class="log-line">
+                    <span class="log-time">11:04:32</span>
+                    <span class="log-info">INFO</span>
+                    <span>web-server-01 health check completed successfully</span>
+                </div>
+
+                <div class="log-line">
+                    <span class="log-time">11:04:28</span>
+                    <span class="log-warning">WARN</span>
+                    <span>web-server-02 CPU utilization above 80%</span>
+                </div>
+
+                <div class="log-line">
+                    <span class="log-time">11:04:21</span>
+                    <span class="log-error">ERROR</span>
+                    <span>production-db latency exceeded threshold</span>
+                </div>
+
+                <div class="log-line">
+                    <span class="log-time">11:04:10</span>
+                    <span class="log-info">INFO</span>
+                    <span>AI anomaly detection scan completed</span>
+                </div>
+
+                <div class="log-line">
+                    <span class="log-time">11:03:57</span>
+                    <span class="log-info">INFO</span>
+                    <span>api-gateway traffic increased by 182%</span>
+                </div>
+
+            </div>
+
+
+            <!-- ================= SETTINGS ================= -->
+
+            <div class="section-title" id="settings">
+
+                <div>
+
+                    <h2>Settings</h2>
+
+                    <p>
+                        Configure CloudOps AI monitoring preferences.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="settings-grid">
+
+                <div class="setting-card">
+
+                    <div class="setting-icon">
+                        ⚙
+                    </div>
+
+                    <div>
+
+                        <h3>Monitoring Settings</h3>
+
+                        <p>
+                            Configure monitoring intervals and resource
+                            thresholds.
+                        </p>
+
+                    </div>
+
+                    <button class="secondary-button">
+                        Configure
+                    </button>
+
+                </div>
+
+
+                <div class="setting-card">
+
+                    <div class="setting-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <h3>AI Settings</h3>
+
+                        <p>
+                            Configure anomaly detection and AI analysis.
+                        </p>
+
+                    </div>
+
+                    <button class="secondary-button">
+                        Configure
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <footer>
+
+                <div>
+                    © 2026 CloudOps AI
+                </div>
+
+                <div>
+                    Intelligent Cloud Infrastructure Monitoring
+                </div>
+
+                <div class="footer-status">
+                    ● All systems operational
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
