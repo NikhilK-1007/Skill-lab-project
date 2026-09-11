@@ -27,7 +27,7 @@ Figma Design of website
 
 Prototype
 
-https://www.figma.com/design/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?node-id=0-1&t=NTXK2n2Ce0l6OYoP-1
+[https://www.figma.com/design/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?node-id=0-1&t=NTXK2n2Ce0l6OYoP-1](https://www.figma.com/design/KpUVLE0nPtTJHq4N221Slk/Skill-lab-project?t=1c3gp7Y3Fk6bS7Eb-1)
 
 AI vers- https://stitch.withgoogle.com/projects/14061967927264143048
 <img width="950" height="750" alt="image" src="https://github.com/user-attachments/assets/046a188d-36e9-477f-99d9-5d74aaf0ca92" />
